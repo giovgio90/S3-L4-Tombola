@@ -6,17 +6,18 @@ const numeriGenerati = [];
 
 for (let i = 0; i < 75; i++) {
   let contenitoreCelle = document.createElement("div");
-  let celle = (document = document.createElement("h3"));
+  let celle = document.createElement("h3");
   celle.innerText = i + 1;
   contenitoreCelle.appendChild(celle);
   tabellone.appendChild(contenitoreCelle);
 }
 
-const randomNumb = () => {
+const randomNumb = (eventButton) => {
   for (let i = 0; i < 75; i++) {
     randomic = Math.floor(Math.random() * 75) + 1;
+    console.log(eventButton);
+    console.log(eventButton.target);
 
-    // Verifica se il numero è già stato generato in precedenza
     if (!numeriGenerati.includes(randomic)) {
       break;
     }
