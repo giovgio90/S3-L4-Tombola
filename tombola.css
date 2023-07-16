@@ -23,3 +23,7 @@ h1 {
 .evidenziata {
   background-color: rgb(221, 221, 67);
 }
+
+p {
+  font-weight: bold;
+}
