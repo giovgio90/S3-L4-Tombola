@@ -18,7 +18,7 @@ const randomNumb = (eventButton) => {
     console.log(eventButton);
     console.log(eventButton.target);
 
-    if (!numeriGenerati.includes(randomic)) {
+    if (numeriGenerati.includes(randomic)) {
       break;
     }
   }
